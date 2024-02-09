@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
+:root{
+    --var-border-color: blue;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Gruppo';
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left{
+    display: flex;
+    justify-content: center;
+    width: 25vw;
+    background: url(https://images.unsplash.com/photo-1495001258031-d1b407bc1776?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fHNpZ24lMjB1cHxlbnwwfHwwfHx8MA%3D%3D) center;
+    background-size: cover;
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    width: 75vw;
+}
+
+
+.img-Box{
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    background-color: rgb(75, 73, 73,0.5);
+}
+
+img{
+    height: 150px;
+}
+
+.heading{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin-right: 10px;
+}
+
+.right-heading{
+    font-size: 32px;
+    font-weight: 900;
+    margin: 3%;
+}
+
+
+.formDetails{
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+}
+
+.formDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 5%;
+}
+
+.formDivOutside{
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input{
+   height: 20px;
+   border: 1px solid #E5E7EB;
+   border-radius: 5px;
+}
+
+
+input:invalid{
+    border-color: red;
+}
+
+.background{
+    background-color: whitesmoke;
+}
+
+
+.formDiv > input:focus{
+    border-color: var(--var-border-color);
+}
+
+.formDiv > input:hover{
+    border-color: blue;
+}
+
+.createAccount{
+    color: white;
+    background-color: #596D48;
+    border-radius: 10px;
+    height: 40px;
+    margin: 20px;
+    width: 200px;
+    font-size: 23px;
+}
+
+.last{
+    margin: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #596D48;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.buttonClass{
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+}
